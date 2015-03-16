@@ -1,5 +1,10 @@
 package snow.io.typedarray;
 
+#if js
+
+    typedef ArrayBuffer = js.html.ArrayBuffer;
+
+#else
 
     import haxe.io.Bytes;
 
@@ -19,3 +24,5 @@ package snow.io.typedarray;
             }
         #end
     }
+
+#end
