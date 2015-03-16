@@ -250,7 +250,7 @@ import snow.Log._verboser;
                 }
 
                     //Then we need it to be a BytesInput haxe.io.Input
-                var _raw_bytes = _bytes.buffer;
+                var _raw_bytes = _bytes.toBytes();
                     //now a byte input for format.png
                 var byte_input = new haxe.io.BytesInput(_raw_bytes, 0, _raw_bytes.length);
                     //get the raw data

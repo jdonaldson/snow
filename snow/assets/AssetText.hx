@@ -36,7 +36,7 @@ class AssetText extends Asset {
 
         var p = assets.lib.io.data_load( info.path, { binary:false });
         p.then(function(data:Uint8Array){
-            load_from_string( data.buffer.toString(), onload );
+            load_from_string( data.toBytes().toString(), onload );
         });
 
     } //load

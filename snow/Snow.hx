@@ -490,7 +490,7 @@ class Snow {
 
             load.then(function(_data:Uint8Array) {
 
-                var _filedata = _data.buffer.toString();
+                var _filedata = _data.toBytes().toString();
                 if(_filedata != null && _filedata.length != 0) {
 
                     var _list:Array<String> = haxe.Json.parse(_filedata.toString());
