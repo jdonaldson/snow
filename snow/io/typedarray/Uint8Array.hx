@@ -13,7 +13,7 @@ package snow.io.typedarray;
             ?elements:Int,
             ?array:Array<T>,
             ?view:ArrayBufferView,
-            ?buffer:snow.io.typedarray.ArrayBuffer, ?byteoffset:Int = 0, ?len:Null<Int>
+            ?buffer:ArrayBuffer, ?byteoffset:Int = 0, ?len:Null<Int>
         ) {
             if(elements != null) {
                 this = new js.html.Uint8Array( elements );
